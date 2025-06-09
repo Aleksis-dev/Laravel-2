@@ -35,8 +35,8 @@ class PostController extends Controller
         ]);
 
         $post = Post::create([
-            'title' => title,
-            'content' => content
+            'title' => $request->input('title'),
+            'content' => $request->input('title')
         ]);
 
         return redirect()->route('post.show', $post)->with('status_code', 'Post created successfully.');
