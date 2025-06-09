@@ -1,4 +1,6 @@
-<x-app-layout>
+@extends('layouts.app')
+
+@section('content')
     <h1>Create post</h1>
 
     <x-error-message :errors="$errors" />
@@ -18,4 +20,4 @@
             <input type="submit" value="Create">
         </div>
     </form>
-</x-app-layout>
+@endsection
