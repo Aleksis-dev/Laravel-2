@@ -3,7 +3,7 @@
 
     <x-error-message :errors="$errors" />
 
-    <form action="{{ route('post.create') }}" method="post">
+    <form action="{{ route('post.store') }}" method="post">
         @csrf
 
         <div>
